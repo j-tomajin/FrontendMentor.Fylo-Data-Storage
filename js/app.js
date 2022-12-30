@@ -16,4 +16,4 @@ const leftInterval = setInterval(() => {
     if(left === 72) {
         clearInterval(leftInterval)
     }
-}, 4.775)
+}, 3.999)
