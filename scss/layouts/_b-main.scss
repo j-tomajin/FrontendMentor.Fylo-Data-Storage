@@ -2,7 +2,7 @@
 @use '../utils/functions' as f;
 /* MAIN */
 .main {
-    width: min(calc(100% - 3rem), f.rem(920));
+    width: min(calc(100% - 3rem), f.rem(1110));
     margin-inline: auto;
 
     &__card--bg {
@@ -67,5 +67,13 @@
         background-color: var(--clr-neutral-900);
         border-radius: 50px;
         margin-bottom: f.rem(12);
+    }
+
+    .data-left {
+        background-color: var(--clr-neutral-200);
+        padding: f.rem(16);
+        border-radius: f.rem(10);
+        font-size: 1rem;
+        font-size: clamp(1rem, 0.66rem + 1.47vw, 1.5rem);
     }
 }
