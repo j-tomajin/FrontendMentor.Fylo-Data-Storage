@@ -4,28 +4,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
   
-  <title>Frontend Mentor | Fylo data storage component</title>
+  <title>Fylo Data Storage</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./dist/style.css">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- JAVASCRIPT -->
+  <script src="./js/app.js" defer></script>
 </head>
 <body>
+  <!-- MAIN -->
+  <main class="main">
+    <article class="main__display">
+      <div class="main__top main__card--bg">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="fylo logo">
+        </div>
+        <div class="main__feature">
+          <div class="feature">
+            <img src="./images/icon-document.svg" alt="document icon">
+          </div>
+          <div class="feature">
+            <img src="./images/icon-folder.svg" alt="folder icon">
+          </div>
+          <div class="feature">
+            <img src="./images/icon-upload.svg" alt="upload icon">
+          </div>
+        </div>
+      </div>
 
-  You've used 815 GB of your storage
+      <div class="main__bottom main__card--bg raleway">
+        <h1 class="raleway">
+          You've used <span class="raleway-bold">815 GB</span> of your storage
+        </h1>
 
-  185 GB Left
+        <!-- PROGRESS BAR -->
+        <div class="progress-bar" style="--width: 5; --left: 5"></div>
+
+        <div class="data-limit raleway-bold">
+          <div class="min">0 GB</div>
+          <div class="max">1000 GB</div>
+        </div>
+
+        <div class="data-left raleway-bold">185 GB Left</div>
+      </div>
+    </article>
+  </main>
   
-  0 GB
-  1000 GB
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <!-- FOOTER -->
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
 </body>
 </html>
