@@ -7,10 +7,12 @@ footer {
 }
 
 .attribution { 
-    font-size: 11px; 
+    font-size: 0.75rem;
+    font-size: clamp(0.75rem, 0.58rem + 0.73vw, 1rem);
     text-align: center; 
+    color: var(--clr-neutral-300);
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: var(--clr-neutral-200); 
 }
