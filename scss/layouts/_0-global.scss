@@ -1,3 +1,18 @@
 @use '../utils/breakpoints' as bp;
 @use '../utils/functions' as f;
 @use '../utils/fonts' as font;
+
+body {
+    display: grid;
+    place-items: center;
+}
+
+.raleway {
+    font-family: font.$raleway;
+    font-weight: 400;
+}
+
+.raleway-bold {
+    font-family: font.$raleway;
+    font-weight: 700;
+}
