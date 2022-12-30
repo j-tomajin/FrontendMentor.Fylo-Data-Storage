@@ -8,9 +8,29 @@
 
         .data-left {
             position: absolute;
+            bottom: -26px;
+            left: 50%;
+            transform: translateX(-50%);
 
-            // temp
-            display: none;
+            @include bp.breakpointMin(large-screen) {
+                top: -44px;
+                right: -44px;
+                bottom: unset;
+                left: unset;
+
+                &::after {
+                    content: '';
+                    width: 50px;
+                    height: 50px;
+                    border-left: transparent 50px solid;
+                    border-top: var(--clr-neutral-200) solid 50px;
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    bottom: -24px;
+                    z-index: -1;
+                }
+            }
         }
     }
 
